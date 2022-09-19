@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="description" content="Qui. de quoi parle ou " />
+    <title>table de coeur</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- 1er a =logo du site -->
+
+      <a href="index.html" id="logo">
+        <img src="assets/src/logo.svg" alt="table de coeur" />
+      </a>
+
+      <!-- 2eme a = menu burger -->
+      <a href="#menu">
+        <img
+          src="/assets/src/burger.svg"
+          alt="menu responsive"
+          aria-lable="open navigation"
+        />
+      </a>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="#">fermer</a></li>
+          <li><a href="">page</a></li>
+          <li><a href="">page</a></li>
+          <li><a href="">page</a></li>
+          <li><a href="">page</a></li>
+          <li><a href="">page</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>table de coeur</h1>
+        <p>offerz un repas pour ceux qui sont dans le besoin</p>
+        <p>la chaleur humaine au coeur de la table</p>
+
+        <a href="" class="btnblanc">participer a l'action</a>
+        <a href="" class="btnblanc">En sovoir de plus</a>
+      </article>
+    </header>
+
+    <main>
+      <section>
+        <hgroup>
+          <h2>table du coeur</h2>
+          <h3>En quelques chiffres</h3>
+        </hgroup>
+
+        <article>
+          <strong>9.3 Mio</strong>
+          <h4>Vivent sous le seuil de pauvreté</h4>
+          <hr id="trait" />
+        </article>
+
+        <article>
+          <strong>10 Mio</strong>
+          <h4>de tonnes de produits par an due au gaspillages alimentares</h4>
+        </article>
+
+        <article>
+          <strong>16 mld</strong>
+          <h4>
+            valeur commerciale estimée en cours par ke gaspillages alimentares
+          </h4>
+        </article>
+      </section>
+
+      <section id="noir">
+        <hgroup>
+          <h2>comment puis-je vous aider ?</h2>
+          <h3 class="or">c'est trés simple .</h3>
+        </hgroup>
+      </section>
+
+      <section id="persona">
+        <h2>
+          que vous soyez professionnel ou particulier vous pouvez contribuer
+        </h2>
+
+        <article class="profil">
+          <h3>professionnel</h3>
+          <div>
+            <img src="/assets/img/chef.jpg" alt="chef de cuisto" />
+            <a href="contribuer.html" class="action">contribuer au proje</a>
+          </div>
+        </article>
+
+        <article class="profil">
+          <h3>particulier</h3>
+          <div>
+            <img src="/assets/img/particulier.jpg" alt="table du coeur" />
+            <a href="contribuer.html" class="action">contribuer au projet</a>
+          </div>
+        </article>
+        <article class="profil">
+          <h3>bénéficiaires</h3>
+          <div>
+            <img src="/assets/img/benef.jpg" alt="table du coeur" />
+            <a href="map.html" class="action">ou me presenter</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="info">
+        <h2>plus d'information</h2>
+        <h3 class="or">envoyer nous un message</h3>
+
+        <form action="mailto:email@email.com">
+          <!-- <label for="jawad">votre nom</label> -->
+          <input
+            type="text"
+            name="nom"
+            id=""
+            required
+            placeholder="votre nom"
+            autocomplete
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            aria-required
+            placeholder="votre email"
+            aria-placeholder="votre email"
+            autocomplete
+            autofocus
+          />
+          <label for="objet">votre objet</label>
+          <select name="objet" id="objet">
+            <option value="#">objet de la demande</option>
+            <option value="phone">etre contacter</option>
+            <option value="rdv">prendre rendez vous</option>
+          </select>
+          <textarea name="message" id=""> </textarea>
+
+          <input type="text" placeholder="5 + 10 =" pattern="15" required />
+
+          <input type="submit" value="envoyer ma demande" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

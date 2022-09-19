@@ -1,0 +1,224 @@
+@import url(phone.css);
+@import url(tablet.css);
+@import url(desktop);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --gv: #5b9274;
+  --red: #e70d02;
+  --m: #c28e63;
+  --v: #13ff0d;
+  --gris: #616161;
+  --bold: 700;
+  --light: 300;
+  --regular: 400;
+  --strong: 900;
+  --ps: 19px;
+  --h1s: 40px;
+  --h2s: 24px;
+  --h3s: 21px;
+  --ss: 64px;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+}
+
+header > a#logo {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 10px;
+}
+
+header > article {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 149px; */
+  align-items: center;
+}
+
+header > article > .btnblanc {
+  width: 208px;
+  height: 51px;
+  border: 2px solid white;
+  color: white;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+a {
+  text-decoration: none;
+}
+
+header :is(h1, p) {
+  color: white;
+  width: 208px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main > section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main > section:first-child {
+  background: var(--m);
+}
+main > section > article ,
+article > div {
+  flex: 1;
+  min-width: 280px;
+  height: 180px;
+}
+
+main > section :is(hgroup, h2, h3) {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+strong {
+  font-weight: var(--strong);
+  font-size: var(--ss);
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: block;
+}
+
+h4 {
+  font-size: var(--ps);
+  font-weight: var(--regular);
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--h2s);
+  font-weight: var(--light);
+}
+
+h3 {
+  font-size: var(--h3s);
+  font-weight: var(--light);
+}
+
+#noir {
+  background: black;
+  min-height: 125px;
+}
+.or {
+  color: var(--m);
+}
+
+#persona > h2,
+.profil > h3 {
+  color: black;
+}
+
+.profil {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.profil > div > a {
+  width: 207px;
+  height: 51px;
+  background: var(--m);
+  text-align: center;
+  display: block;
+  line-height: 51px;
+  position: absolute;
+  top: 400px;
+  left: 25px;
+  color: black;
+  border: 2px solid black;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+article > div {
+  height: 291px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+/* filter: blur(10px); */
+
+}
+/* article > div:hover{
+filter: blur(0px);
+} */
+
+
+
+
+.profil > div:hover > a{
+  top: 266px;
+  opacity: 1;
+
+}
+
+#info {
+  background: black;
+  min-height: 434px;
+  padding: 20px 0;
+}
+form{
+  width: 80%;
+  margin: auto;
+}
+
+input, textarea, select, label {
+  width: 100%;
+  margin: 5px 0 ;
+  height: 30px;
+  background: black;
+  border: none;
+  color: var(--v);
+}
+
+::placeholder, label, select{
+  color: white;
+  font-size: 14px;
+}
+input[type="submit"]{
+  background: var(--v);
+  width: 100%;
+  height: 50px;
+  color: black;
+ 
+  cursor: pointer;
+}
+
+/* input:focus {
+  background: gray;
+}
+
+input:valid {
+  border: 1px solid var(--v);
+}
+
+input:invalid{
+  border: 1px solid var(--red);
+} */
+
+textarea{
+  resize: none;
+  border: 1px solid white;
+  height: 130px;
+}
